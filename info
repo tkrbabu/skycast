@@ -1,0 +1,5 @@
+Given two different files 
+1. skycast_assign.py - 
+	For getting optimal clicks count, In sample input only 2 cases give correct answer and 2 are giving wrong answer. This code will give optimal solution for all the cases.
+2. skycast_assign_seq.py - 
+	For getting clicks count when the user follow the same sequence given in the input.
