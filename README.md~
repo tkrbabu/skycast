@@ -1,15 +1,6 @@
 # skycast
 ---------
-Need to consider the following things while doing code
 
-1. Clean Code. 
-2. Unit tests.
-3. Parameter-isation of your entire program using command line arguments.
-4. Both functional and OO styles of modelling the solution.
-5. Comments/documentation.
-6. Use of Git DVCS from the start of the task, having incremental commits, and showing history of how each enhancement (like command line parsing) took shape.
-
-#
 Gaurav is a 12 year old student who’s fractured his leg and lower back in a bicycle accident and is on a bed rest for the next 2 months. He keeps himself busy by watching television on his Skycast DTH. While watching the television, one day he decided to play a small game, where he has to identify the minimum number of clicks required to surf a given set of channels in a sequence. He quickly decided that it makes for an interesting problem to solve using a software program, (oh, forgot to tell you that he likes to code when he is not busy with his school work). 
 Your task is to write the software program (using any of the programming language choices given), before Gaurav can do it himself, we think he is going to take 2 hours, so you think you can beat the 12 year old in solving this, we think so! Your time starts now!
 Obviously the program has to take the following instructions and constraints into account. 
