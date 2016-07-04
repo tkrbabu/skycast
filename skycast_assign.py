@@ -1,13 +1,14 @@
-# Coder: T. K . Ramesh Babu ##
-
+##   Coder: T. K . Ramesh Babu ##
+##   Givens optimal solution   ##
 #### Class for initial input ####
+import sys
 class skycast:
 	def __init__(self):
 		pass
-	def initialinput(self):
-		self.boundary = map(int, raw_input().split()) # lower and upper bounds
-		self.blockch = map(int, raw_input().split()) # block channels
-		self.wishch = map(int, raw_input().split()) # wish channels
+	def initialinput(self,argv):
+		self.boundary = map(int, argv[0].split()) # lower and upper bounds
+		self.blockch = map(int, argv[1].split()) # block channels
+		self.wishch = map(int, argv[2].split()) # wish channels
 #### Class for findign the difference ####
 class chsort(skycast):
 	 def __init__(self):
@@ -68,12 +69,13 @@ class checker:
 			if wishch[i]==wishch[i+1]:
 				cnt=cnt+1
 		return cnt
-c=minsum()	
-c.initialinput()
-check=checker()
-if check.boundchecker(c.boundary) and check.blockcheck(c.blockch[0]) and check.wcheck(c.wishch[0]):
-	c.finddiff()
-	print("Minimum number of clicks required is=")
-	print(c.calsum()-check.ncheck(c.wishch))
-else:
-	print("Invalid Inputs")
+if __name__ == '__main__':
+	c=minsum()	
+	c.initialinput(sys.argv[1:]) #Inputs are take through command line.
+	check=checker()
+	if check.boundchecker(c.boundary) and check.blockcheck(c.blockch[0]) and check.wcheck(c.wishch[0]):
+		c.finddiff()
+		print("Minimum number of clicks required is=")
+		print(c.calsum()-check.ncheck(c.wishch))
+	else:
+		print("Invalid Inputs")
