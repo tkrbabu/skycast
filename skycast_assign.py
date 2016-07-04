@@ -70,12 +70,12 @@ class checker:
 				cnt=cnt+1
 		return cnt
 if __name__ == '__main__':
-	c=minsum()	
-	c.initialinput(sys.argv[1:]) #Inputs are take through command line.
+	gauravclicks=minsum()	
+	gauravclicks.initialinput(sys.argv[1:]) #Inputs are take through command line.
 	check=checker()
-	if check.boundchecker(c.boundary) and check.blockcheck(c.blockch[0]) and check.wcheck(c.wishch[0]):
-		c.finddiff()
+	if check.boundchecker(gauravclicks.boundary) and check.blockcheck(gauravclicks.blockch[0]) and check.wcheck(gauravclicks.wishch[0]):
+		gauravclicks.finddiff()
 		print("Minimum number of clicks required is=")
-		print(c.calsum()-check.ncheck(c.wishch))
+		print(gauravclicks.calsum()-check.ncheck(gauravclicks.wishch))
 	else:
 		print("Invalid Inputs")
