@@ -1,5 +1,4 @@
-##   Coder: T. K . Ramesh Babu ##
-##   Givens optimal solution   ##
+
 #### Class for initial input ####
 import sys
 class skycast:
